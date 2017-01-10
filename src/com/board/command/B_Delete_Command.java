@@ -3,7 +3,7 @@ package com.board.command;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.board.Dao.Board_Dao;
+import com.board.dao.Board_Dao;
 
 public class B_Delete_Command implements B_Command {
 

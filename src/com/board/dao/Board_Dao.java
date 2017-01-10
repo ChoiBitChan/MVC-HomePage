@@ -1,4 +1,4 @@
-package com.board.Dao;
+package com.board.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 
-import com.board.Dto.Board_Dto;
+import com.board.dto.Board_Dto;
 
 public class Board_Dao {
 

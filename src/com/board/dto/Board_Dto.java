@@ -1,4 +1,4 @@
-package com.board.Dto;
+package com.board.dto;
 
 import java.sql.Timestamp;
 

@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.board.Dao.Board_Dao;
-import com.board.Dto.Board_Dto;
+import com.board.dao.Board_Dao;
+import com.board.dto.Board_Dto;
 
 public class B_List_Command implements B_Command {
 
