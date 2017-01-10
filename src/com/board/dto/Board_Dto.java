@@ -34,7 +34,7 @@ public class Board_Dto {
 		return bNum;
 	}
 
-	public void setbId(int bId) {
+	public void setbNum(int bNum) {
 		this.bNum = bNum;
 	}
 
@@ -42,7 +42,7 @@ public class Board_Dto {
 		return bId;
 	}
 
-	public void setbName(String bName) {
+	public void setbId(String bId) {
 		this.bId = bId;
 	}
 
