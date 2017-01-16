@@ -16,6 +16,6 @@
 	[<%= id %>] WellCome.
 	<br/>
 	<input type="button" value="Modify" onclick="location.href='modify_page.Mdo'">
-	<input type="button" value="Board" onclick="location.href='board_page.Mdo'">
+	<input type="button" value="Board" onclick="location.href='board_page.Bdo'">
 </body>
 </html>

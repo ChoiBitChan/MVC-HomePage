@@ -13,6 +13,10 @@ import com.board.command.B_Command;
 import com.board.command.B_Content_Command;
 import com.board.command.B_Delete_Command;
 import com.board.command.B_List_Command;
+import com.board.command.B_Modify_Command;
+import com.board.command.B_Modify_idCheck_Command;
+import com.board.command.B_Reply_Command;
+import com.board.command.B_Reply_getInfo_Command;
 import com.board.command.B_Write_Command;
 
 /**
@@ -78,6 +82,28 @@ public class Board_Controller extends HttpServlet {
 		
 		else if (com.equals("/delete.Bdo"))	{
 			command = new B_Delete_Command();
+			command.execute(request, response);
+			return;
+			//viewPage = "board_page.Bdo";
+		}
+		
+		else if (com.equals("/board_modify_page.Bdo")) {
+			command = new B_Modify_idCheck_Command();
+			command.execute(request, response);
+			return;
+		} else if (com.equals("/board_modify.Bdo")) {
+			command = new B_Modify_Command();
+			command.execute(request, response);
+			viewPage = "board_page.Bdo";
+		}
+		
+		else if (com.equals("/board_reply_page.Bdo")) {
+			command = new B_Reply_getInfo_Command();
+			command.execute(request, response);
+			viewPage = "Page_board_reply.jsp";
+		} else if (com.equals("/reply.Bdo")) {
+			System.out.println("reply.Bdo");
+			command = new B_Reply_Command();
 			command.execute(request, response);
 			viewPage = "board_page.Bdo";
 		}

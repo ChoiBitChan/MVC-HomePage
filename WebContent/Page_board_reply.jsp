@@ -10,27 +10,32 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Write Page
+	Reply Page
 	<table width="500" cellpadding="0" cellspacing="0" border="1">
-		<form action="write.Bdo" method="post">
+		<form action="reply.Bdo" method="post">
+			<input type="hidden" name="bNum" value="${ bNum }">
+			<input type="hidden" name="bGroup" value="${ bGroup }">
+			<input type="hidden" name="bStep" value="${ bStep }">
+			<input type="hidden" name="bIndent" value="${ bIndent }">
 			<tr>
 				<td> 아이디 </td>
-				<td> <input type="hidden" name="bId" size="20" value=<%=id %>><%=id %> </td>
+				<td> <input type="hidden" name="bId" size="20" value=<%=id %>><%=id %></td>
 			</tr>
 			<tr>
 				<td> 제목 </td>
-				<td> <input type="text" name="bTitle" size = "50"> </td>
+				<td> <input type="text" name="bTitle" size = "50"></td>
 			</tr>
 			<tr>
 				<td> 내용 </td>
-				<td> <textarea name="bContent" rows="10" ></textarea> </td>
+				<td> <textarea name="bContent" rows="10" ></textarea></td>
 			</tr>
 			<tr >
-				<td colspan="2"> <input type="submit" value="Write">
+				<td colspan="2"> <input type="submit" value="Reply">
 				&nbsp;&nbsp;
-				<input type="button" value="Board" onclick="location.href='board_page.Bdo'"></td>
+				<input type="button" value="Board" onclick="location.href='board_page.Bdo?pageNum=${ 1 }'"></td>
 			</tr>
 		</form>
 	</table>
+
 </body>
 </html>

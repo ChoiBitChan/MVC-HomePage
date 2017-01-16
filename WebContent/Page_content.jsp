@@ -9,7 +9,7 @@
 <body>
 
 	<table width="500" cellpadding="0" cellspacing="0" border="1">
-		<form action="modify.Bdo" method="post">
+		<form action="board_modify_page.Bdo" method="post">
 			<input type="hidden" name="bNum" value="${ content_view.bNum }">
 			<tr>
 				<td> 번호 </td>
@@ -36,9 +36,10 @@
 				&nbsp;&nbsp;
 				<input type="button" value="Board" onclick="location.href='board_page.Bdo'">
 				&nbsp;&nbsp;
-				<input type="button" value="Delete" onclick="location.href='delete.Bdo?bNum=${content_view.bNum}'">
+				<input type="button" value="Delete" onclick="location.href='delete.Bdo?bNum=${content_view.bNum}&bId=${content_view.bId}'">
 				&nbsp;&nbsp;
-				<a href="reply_view.do?bNum=${content_view.bNum}">답변</a></td>
+				<input type="button" value="Reply" onclick="location.href='board_reply_page.Bdo?bNum=${content_view.bNum}'">
+				</td>
 			</tr>
 		</form>
 	</table>
